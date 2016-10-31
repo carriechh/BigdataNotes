@@ -1,4 +1,4 @@
-# 标题
+# HDFS 完全分布式安装
 
 ## 开发环境
   - Vmware
@@ -43,6 +43,7 @@
   ```
 
   - 修改masters文件和slaves文件
+
 
   - 格式化namenode
 
