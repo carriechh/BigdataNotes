@@ -23,19 +23,24 @@
 
 
   - 修改etc/hadoop/core-site.xml
-    <xml>
-        <configuration>
-          <property>
-            <name>fs.defaultFS</name>
-            <value>hdfs://node1:9000</value>
-          </property>
-        </configuration>
-    <xml>
+    ```
+    <configuration>
+      <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://node1:9000</value>
+      </property>
+    </configuration>
+    ```
 
   - 修改etc/hadoop/hdfs-site.xml:
-    <root>
-
-    </root>
+  ```
+  <configuration>
+      <property>
+        <name>dfs.replication</name>
+        <value>3</value>
+      </property>
+  </configuration>
+  ```
 
   - 修改masters文件和slaves文件
 
